@@ -73,12 +73,11 @@ function Navbar({ isLoggedIn }) {
         
         {/* Links */}
         <div className="hidden md:flex items-center space-x-4 lg:space-x-6 text-[13px] lg:text-[14px] font-medium text-ink-muted-80 whitespace-nowrap shrink-0">
+          <a href="#pricing" className="hover:text-ink transition-colors">비용 및 계약</a>
           <a href="#features" className="hover:text-ink transition-colors">서비스 특징</a>
           <a href="#workflow" className="hover:text-ink transition-colors">작업 프로세스</a>
           <a href="#portfolio" className="hover:text-ink transition-colors">포트폴리오</a>
-          <a href="#pricing" className="hover:text-ink transition-colors">비용 및 계약</a>
           <a href="#faq" className="hover:text-ink transition-colors">자주 묻는 질문</a>
-          <button onClick={() => navigate('/mypage')} className="hover:text-ink transition-colors font-bold text-[#5227FF]">마</button>
         </div>
 
         {/* Buttons */}
