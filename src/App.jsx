@@ -779,7 +779,7 @@ function Pricing() {
           className="text-center mb-20"
         >
           <h2 className="text-[48px] md:text-[56px] font-bold tracking-tight mb-6 font-display text-black leading-tight">
-            합리적이고 투명한<br />프로젝트 플랜
+            재활의학과의사회<br />특별 제안 가격
           </h2>
           <p className="text-[18px] text-[#666] leading-[1.6] max-w-[600px] mx-auto break-keep">
             비즈니스 단계에 맞는 최적의 플랜을 선택하세요.
@@ -870,28 +870,28 @@ function Pricing() {
                 title: "기획 및 계약",
                 badge: "계약금 50%",
                 badgeColor: "bg-black text-white shadow-md",
-                desc: ["프로젝트 신청 및 심층 상담", "개발 범위 확정 및 계약 체결"]
+                desc: ["원장님 심층 인터뷰 및 요구사항 분석", "병원 특화 메뉴 구성 및 계약 체결"]
               },
               {
                 step: "02",
                 title: "디자인 완료",
-                badge: "중도금 40%",
+                badge: "디자인 진행",
                 badgeColor: "bg-[#f5f5f7] text-[#555] border border-black/10",
-                desc: ["맞춤형 UI/UX 화면 설계", "비주얼 퍼블리싱 및 시연"]
+                desc: ["병원 브랜딩 맞춤형 UI/UX 설계", "디자인 시안 컨펌 및 피드백 반영"]
               },
               {
                 step: "03",
                 title: "기능 개발 및 검증",
-                badge: "개발 집중",
+                badge: "개발 및 테스트",
                 badgeColor: "bg-transparent text-[#999] border border-transparent",
-                desc: ["비즈니스 핵심 로직 구현", "통합 테스트 및 안정화"]
+                desc: ["진료 안내, 랜딩 페이지 등 퍼블리싱", "예약 연동 및 모바일 호환성 테스트"]
               },
               {
                 step: "04",
                 title: "정식 런칭",
-                badge: "잔금 10%",
+                badge: "잔금 50%",
                 badgeColor: "bg-[#f5f5f7] text-[#555] border border-black/10",
-                desc: ["서버 배포", "소스 인수인계 및 종료"]
+                desc: ["네이버/구글 검색 엔진 최적화(SEO)", "도메인 연결 및 관리자 권한 인수인계"]
               }
             ].map((item, idx) => (
               <div key={idx} className="relative flex flex-col items-center text-center">
