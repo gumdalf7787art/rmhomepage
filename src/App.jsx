@@ -680,24 +680,27 @@ function Portfolio() {
   const portfolios = [
     {
       id: 1,
-      type: "개원가 프리미엄 홈페이지",
-      title: "S재활의학과 맞춤형 웹사이트",
-      tags: ["#SEO최적화", "#특화클리닉", "#예약연동"],
-      image: "/assets/images/portfolio_matching_app_1787205038370.png"
+      type: "대표적 스타일",
+      title: "프리미엄 재활의학과",
+      tags: ["#표준형", "#정보전달최적화", "#신뢰감"],
+      url: "https://naumclinic.pages.dev/",
+      desc: "다양한 진료 과목과 병원 안내를 체계적으로 보여주는 가장 표준적이고 안정적인 레이아웃입니다."
     },
     {
       id: 2,
-      type: "예약 및 환자 관리",
-      title: "D의원 환자 예약 관리 대시보드",
-      tags: ["#예약현황", "#환자통계", "#실시간리포트"],
-      image: "/assets/images/portfolio_dashboard_1787205051396.png"
+      type: "풀페이지 스크롤형",
+      title: "브랜딩 특화 홈페이지",
+      tags: ["#시각적임팩트", "#몰입감", "#고급스러움"],
+      url: "https://naumclinic.pages.dev/fullpage",
+      desc: "한 화면씩 꽉 채워서 넘어가는 방식으로, 병원의 철학과 하이엔드 브랜딩을 강조할 때 강력한 인상을 줍니다."
     },
     {
       id: 3,
-      type: "이벤트 랜딩 페이지",
-      title: "M클리닉 통증 치료 특화 랜딩",
-      tags: ["#퍼포먼스마케팅", "#전환율최적화", "#빠른제작"],
-      image: "/assets/images/portfolio_booking_app_1787205064182.png"
+      type: "원페이지형",
+      title: "특화 진료 및 이벤트 랜딩",
+      tags: ["#심플함", "#빠른정보전달", "#전환율최적화"],
+      url: "https://naumclinic.pages.dev/onepage",
+      desc: "페이지 이동 없이 스크롤만으로 핵심 정보를 빠르게 전달하며, 특정 진료나 이벤트를 집중 홍보하기에 최적화된 구조입니다."
     }
   ];
 
@@ -724,37 +727,44 @@ function Portfolio() {
         {/* 3 Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
           {portfolios.map((item, index) => (
-            <motion.div
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
               key={item.id}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.8, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
               className="group cursor-pointer flex flex-col"
             >
-              {/* Image Container */}
-              <div className="w-full aspect-[4/5] rounded-[24px] overflow-hidden mb-6 relative border border-black/5 shadow-[0_15px_40px_rgba(0,0,0,0.06)] bg-[#f8f8f8]">
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+              {/* Iframe Container */}
+              <div className="w-full aspect-[3/4] md:aspect-[4/5] rounded-[24px] overflow-hidden mb-6 relative border border-black/5 shadow-[0_15px_40px_rgba(0,0,0,0.06)] bg-white">
+                <iframe 
+                  src={item.url} 
+                  title={item.title}
+                  className="w-full h-full object-cover pointer-events-none scale-[0.9] md:scale-[0.8] origin-top"
+                  loading="lazy"
                 />
-                <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/5"></div>
+                <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/5 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/80 text-white font-bold py-3 px-6 rounded-full text-[14px]">
+                    새 창에서 열기 ↗
+                  </div>
+                </div>
               </div>
 
               {/* Text Info */}
-              <div className="px-1">
-                <div className="text-[13px] font-semibold text-black/40 mb-3 tracking-wide">{item.type}</div>
-                <h3 className="text-[22px] font-bold text-black mb-4 leading-tight">{item.title}</h3>
-                <div className="flex flex-wrap gap-2">
+              <div className="px-1 flex-1 flex flex-col">
+                <div className="text-[13px] font-semibold text-[#5227FF] mb-3 tracking-wide">{item.type}</div>
+                <h3 className="text-[22px] font-bold text-black mb-3 leading-tight">{item.title}</h3>
+                <p className="text-[14px] text-[#666] mb-5 leading-relaxed break-keep flex-1">
+                  {item.desc}
+                </p>
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {item.tags.map((tag, i) => (
-                    <span key={i} className="px-3 py-1.5 bg-[#f5f5f7] text-[#555] text-[13px] rounded-full font-medium tracking-tight">
+                    <span key={i} className="px-3 py-1.5 bg-[#f5f5f7] text-[#555] text-[12px] md:text-[13px] rounded-full font-medium tracking-tight">
                       {tag}
                     </span>
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </a>
           ))}
         </div>
       </div>
