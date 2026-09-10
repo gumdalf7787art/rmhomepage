@@ -58,21 +58,21 @@ function Navbar({ isLoggedIn }) {
         transition={{ duration: 0.3, ease: 'easeInOut' }}
         className={`flex items-center justify-between w-full mx-auto pointer-events-auto ${
           isScrolled 
-            ? 'max-w-4xl bg-surface-canvas/90 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-divider-hairline rounded-full px-6 h-[56px]' 
+            ? 'max-w-[1060px] bg-surface-canvas/90 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-divider-hairline rounded-full px-6 md:px-8 h-auto py-2 min-h-[56px]' 
             : 'max-w-7xl px-8 h-[60px]'
         }`}
       >
         {/* Logo */}
         <div 
-          className="flex items-center cursor-pointer"
+          className="flex items-center cursor-pointer shrink-1"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <img src="/assets/images/logo.png" alt="Platform Maker Logo" className="w-8 h-8 object-cover rounded-lg mr-3 shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-black/5" />
-          <span className="font-display font-bold text-[18px] md:text-[20px] text-ink tracking-tight">Platform Maker</span>
+          <img src="/assets/images/logo.png" alt="Platform Maker Logo" className="w-8 h-8 object-cover rounded-lg mr-3 shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-black/5 shrink-0" />
+          <span className="font-display font-bold text-[16px] md:text-[18px] text-ink tracking-tight leading-tight">Platform Maker</span>
         </div>
         
         {/* Links */}
-        <div className="hidden md:flex items-center space-x-8 text-[15px] font-medium text-ink-muted-80">
+        <div className="hidden md:flex items-center space-x-4 lg:space-x-6 text-[13px] lg:text-[14px] font-medium text-ink-muted-80 whitespace-nowrap shrink-0">
           <a href="#features" className="hover:text-ink transition-colors">서비스 특징</a>
           <a href="#workflow" className="hover:text-ink transition-colors">작업 프로세스</a>
           <a href="#portfolio" className="hover:text-ink transition-colors">포트폴리오</a>
@@ -82,7 +82,7 @@ function Navbar({ isLoggedIn }) {
         </div>
 
         {/* Buttons */}
-        <div className="flex items-center space-x-6">
+        <div className="flex items-center space-x-3 lg:space-x-4 shrink-0 whitespace-nowrap">
           {isLoggedIn ? (
             <button 
               onClick={() => navigate('/mypage')}
