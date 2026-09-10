@@ -786,93 +786,60 @@ function Pricing() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+        <div className="max-w-[760px] mx-auto">
           
-          {/* Card 1: Platform/MVP (Highlight) */}
+          {/* Card 1: MOU Highlight */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="bg-[#0a0a0a] text-white rounded-[32px] p-10 md:p-12 flex flex-col relative shadow-[0_30px_60px_rgba(0,0,0,0.15)] transform md:-translate-y-4"
+            className="bg-[#0a0a0a] text-white rounded-[40px] p-12 md:p-16 flex flex-col items-center relative shadow-[0_40px_80px_rgba(0,0,0,0.2)]"
           >
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black text-[13px] font-bold px-5 py-2.5 rounded-full tracking-wider shadow-lg">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#FF9FFC] text-black text-[15px] md:text-[18px] font-bold px-8 py-3.5 rounded-full tracking-wider shadow-lg">
               MOU 특별 혜택
             </div>
             
-            <h3 className="text-[28px] font-bold mb-4 mt-2">재활의학과 프리미엄 홈페이지</h3>
-            <p className="text-[16px] text-white/60 mb-8 h-12 break-keep leading-relaxed">
+            <h3 className="text-[32px] md:text-[40px] font-bold mb-5 mt-4 text-center text-white leading-tight">재활의학과 프리미엄 홈페이지</h3>
+            <p className="text-[17px] md:text-[19px] text-white/60 mb-10 text-center break-keep leading-relaxed max-w-[500px]">
               재활의학과의사회 소속 원장님들만을 위한 파격적인 특별 할인
             </p>
             
-            <div className="mb-10 pb-10 border-b border-white/10 flex flex-col">
-              <span className="line-through text-white/40 text-[18px] mb-1">기존 400만원</span>
-              <div className="text-[36px] font-bold tracking-tight text-[#FF9FFC]">199<span className="text-[20px] font-medium text-white/60 ml-1">만원 (50% 할인)</span></div>
+            <div className="mb-12 pb-12 border-b border-white/10 flex flex-col items-center w-full">
+              <span className="line-through text-white/40 text-[20px] mb-3">기존 400만원</span>
+              <div className="text-[64px] md:text-[84px] font-extrabold tracking-tight text-[#FF9FFC] leading-none flex items-baseline">
+                199
+                <span className="text-[26px] md:text-[36px] font-bold text-white/80 ml-2">만원</span>
+                <span className="text-[16px] md:text-[20px] font-medium text-white/50 ml-3">(50% 할인)</span>
+              </div>
             </div>
             
-            <ul className="space-y-4 mb-12 flex-1">
-              <li className="flex items-start text-[15px] font-semibold text-white">
-                <span className="mr-3 text-[12px] mt-[4px]">⚡</span> 월 관리비 단 5만원 (유지보수비 파격할인)
+            <ul className="space-y-5 mb-14 w-full max-w-[500px]">
+              <li className="flex items-center text-[17px] md:text-[19px] font-semibold text-white">
+                <span className="mr-4 text-[16px] md:text-[18px]">⚡</span> 월 관리비 단 5만원 (유지보수비 파격할인)
               </li>
-              <li className="flex items-start text-[15px] text-white/70">
-                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 100% 원장님 맞춤형 하이엔드 UI/UX
+              <li className="flex items-center text-[16px] md:text-[18px] text-white/70">
+                <span className="mr-4 text-white/30 text-[12px]">●</span> 100% 원장님 맞춤형 하이엔드 UI/UX
               </li>
-              <li className="flex items-start text-[15px] text-white/70">
-                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 네이버/구글 SEO 및 AEO 기본 최적화
+              <li className="flex items-center text-[16px] md:text-[18px] text-white/70">
+                <span className="mr-4 text-white/30 text-[12px]">●</span> 네이버/구글 SEO 및 AEO 기본 최적화
               </li>
-              <li className="flex items-start text-[15px] text-white/70">
-                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 스마트한 원장님 전용 관리자 페이지
+              <li className="flex items-center text-[16px] md:text-[18px] text-white/70">
+                <span className="mr-4 text-white/30 text-[12px]">●</span> 스마트한 원장님 전용 관리자 페이지
               </li>
-              <li className="flex items-start text-[15px] text-white/70">
-                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 병원 예약 시스템 및 카카오톡 연동
+              <li className="flex items-center text-[16px] md:text-[18px] text-white/70">
+                <span className="mr-4 text-white/30 text-[12px]">●</span> 병원 예약 시스템 및 카카오톡 연동
               </li>
-              <li className="flex items-start text-[15px] text-white/70">
-                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 서버 및 도메인 1년 무상 지원
+              <li className="flex items-center text-[16px] md:text-[18px] text-white/70">
+                <span className="mr-4 text-white/30 text-[12px]">●</span> 서버 및 도메인 1년 무상 지원
               </li>
             </ul>
             
             <button 
               onClick={() => navigate('/estimate')}
-              className="w-full py-4 rounded-full bg-white text-black font-bold text-[16px] transition-transform duration-200 active:scale-95 hover:bg-gray-100"
+              className="w-full max-w-[500px] py-5 rounded-full bg-white text-black font-extrabold text-[18px] md:text-[20px] transition-transform duration-200 active:scale-95 hover:bg-gray-100 shadow-xl"
             >
               MOU 혜택 신청하기
-            </button>
-          </motion.div>
-
-          {/* Card 2: Company Homepage */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="bg-[#f8f8f8] border border-black/5 rounded-[32px] p-10 md:p-12 flex flex-col hover:bg-white transition-colors duration-500 shadow-[0_15px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] mt-8 md:mt-0"
-          >
-            <h3 className="text-[28px] font-bold mb-4 mt-2 text-black">특화 이벤트 랜딩페이지</h3>
-            <p className="text-[16px] text-[#666] mb-8 h-12 break-keep leading-relaxed">
-              개원 이벤트나 특정 통증 클리닉을<br/>집중 홍보하기 위한 단일 페이지 제작
-            </p>
-            
-            <div className="mb-10 pb-10 border-b border-black/10 flex flex-col justify-end h-full">
-              <div className="text-[36px] font-bold text-black tracking-tight mt-auto">100<span className="text-[20px] font-medium text-[#666] ml-1">만원부터</span></div>
-            </div>
-            
-            <ul className="space-y-4 mb-12 flex-1">
-              <li className="flex items-start text-[15px] text-[#555]">
-                <span className="mr-3 text-black/20 text-[10px] mt-[6px]">●</span> 모바일 중심 반응형 단일 웹
-              </li>
-              <li className="flex items-start text-[15px] text-[#555]">
-                <span className="mr-3 text-black/20 text-[10px] mt-[6px]">●</span> 퍼포먼스 마케팅에 특화된 구조
-              </li>
-              <li className="flex items-start text-[15px] text-[#555]">
-                <span className="mr-3 text-black/20 text-[10px] mt-[6px]">●</span> 빠른 이벤트 집행을 위한 단기 소요
-              </li>
-            </ul>
-            
-            <button 
-              onClick={() => navigate('/estimate')}
-              className="w-full py-4 rounded-full bg-transparent border-2 border-black text-black font-bold text-[16px] transition-transform duration-200 active:scale-95 hover:bg-black hover:text-white"
-            >
-              상담 문의하기
             </button>
           </motion.div>
 
@@ -1163,11 +1130,11 @@ function App() {
             <Navbar isLoggedIn={isLoggedIn} />
             <main className="w-full">
               <Hero />
+              <Pricing />
               <Problem />
               <Features />
               <Workflow />
               <Portfolio />
-              <Pricing />
               <FAQ />
             </main>
             <Footer />
