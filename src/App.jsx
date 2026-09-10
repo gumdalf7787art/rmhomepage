@@ -120,18 +120,18 @@ function Navbar({ isLoggedIn }) {
 const HERO_COPY = [
   {
     main: (
-      <>당신의 혁신적인 아이디어,<br/>5주 만에 세상에 나옵니다.</>
+      <>대한재활의학과의사회 전용<br/>맞춤형 프리미엄 홈페이지</>
     ),
     sub: (
-      <>MVP 제작, 신규 앱 런칭, 플랫폼 런칭<br/>이제 플랫폼 메이커에서 바로 실현시켜 드립니다.</>
+      <>공장형 템플릿이 아닌 100% 맞춤형 디자인으로<br/>원장님만의 특별한 병원 홈페이지를 구축해 드립니다.</>
     )
   },
   {
     main: (
-      <>완벽한 아이디어에 걸맞은<br/>고품질 플랫폼을 경험하세요.</>
+      <>환자의 시선을 사로잡는<br/>완벽한 진료 경험의 시작</>
     ),
     sub: (
-      <>최신 기술 노하우로<br/>고객의 시선을 사로잡을 하이엔드 플랫폼을 구축합니다.</>
+      <>최신 검색 엔진 최적화(SEO) 및 AI 최적화(AEO) 적용으로<br/>환자 유입을 극대화하는 강력한 병원 플랫폼을 경험하세요.</>
     )
   }
 ];
@@ -215,7 +215,7 @@ function Hero() {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-in-out z-0 skew-x-12"></div>
 
               <span className="relative z-10 flex items-center tracking-wide">
-                프로젝트 문의하기
+                MOU 특별 혜택 신청하기
                 <ArrowRight size={18} className="ml-2 group-hover:translate-x-1.5 transition-transform duration-300" />
               </span>
             </button>
@@ -266,7 +266,7 @@ function Problem() {
               Platform Maker
             </h2>
             <p className="text-[20px] md:text-[24px] text-white/80 font-medium tracking-tight">
-              여러분의 고민을 해결해드립니다.
+              개원가 원장님들의 홈페이지 고민을 해결해드립니다.
             </p>
           </motion.div>
         </div>
@@ -294,32 +294,32 @@ function Problem() {
                 <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="text-center mb-8">
-                  <h3 className="text-[24px] font-semibold text-white mb-3">플랫폼 제작</h3>
+                  <h3 className="text-[24px] font-semibold text-white mb-3">병원 맞춤형 홈페이지</h3>
                   <p className="text-[15px] text-white/50 leading-relaxed break-keep">
-                    자체 개발팀을 꾸리기엔<br/>시간과 인건비가 부담스러운 대표님
+                    찍어내는 공장형 디자인이 아닌<br/>우리 병원만의 차별화된 웹사이트
                   </p>
                 </div>
 
                 <ul className="space-y-3.5 flex flex-col justify-center">
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">고객님의 아이디어를 현실화하는 플랫폼</span>
+                    <span className="leading-relaxed break-keep">환자의 신뢰를 얻는 프리미엄 UI/UX 기획</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">Ai 연결을 통한 사용자 서비스 제공 플랫폼</span>
+                    <span className="leading-relaxed break-keep">진료 과목과 특화 클리닉을 돋보이게 하는 구성</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">복수 사용자와 관리자 기능을 갖춘 운영형 플랫폼</span>
+                    <span className="leading-relaxed break-keep">네이버, 구글 등 주요 포털 검색(SEO) 최적화</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">SNS로그인, 채팅, 등이 가능한 플랫폼</span>
+                    <span className="leading-relaxed break-keep">AI 검색 엔진(AEO)에 대응하는 차세대 웹 표준</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">향후 확장 가능한 플랫폼 구축</span>
+                    <span className="leading-relaxed break-keep">PC/태블릿/모바일 100% 반응형 웹 지원</span>
                   </li>
                 </ul>
               </div>
@@ -347,32 +347,32 @@ function Problem() {
                 <div className="absolute inset-0 bg-gradient-to-b from-white/[0.04] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="text-center mb-8">
-                  <h3 className="text-[24px] font-semibold text-white mb-3">MVP 제작</h3>
+                  <h3 className="text-[24px] font-semibold text-white mb-3">전환율 중심 설계</h3>
                   <p className="text-[15px] text-white/50 leading-relaxed break-keep">
-                    아이디어를 빠르게 플랫폼으로 구현해<br/>시장의 반응을 당장 확인하고 싶은 분
+                    방문자를 실제 내원 환자로 이끄는<br/>효과적인 온라인 마케팅 거점
                   </p>
                 </div>
 
                 <ul className="space-y-3.5 flex flex-col justify-center">
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">사업 아이디어 타당성 검증용 MVP</span>
+                    <span className="leading-relaxed break-keep">전화 연결 및 카카오톡 상담 즉시 연동</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">실제 결제 및 운영 가능한 상용 MVP</span>
+                    <span className="leading-relaxed break-keep">네이버 플레이스/예약 서비스 완벽 연동</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">초기 투자 유치(IR) 및 데모데이용 MVP</span>
+                    <span className="leading-relaxed break-keep">사용자 행동 데이터 기반 전환율 최적화</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">정부지원사업 & 국책과제 결과물 제출용 MVP</span>
+                    <span className="leading-relaxed break-keep">의료법을 준수하는 검증된 마케팅 텍스트</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">사전 예약 및 얼리버드 모객용 랜딩MVP</span>
+                    <span className="leading-relaxed break-keep">이벤트 및 랜딩페이지로의 손쉬운 확장</span>
                   </li>
                 </ul>
               </div>
@@ -400,32 +400,32 @@ function Problem() {
                 <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="text-center mb-8">
-                  <h3 className="text-[24px] font-semibold text-white mb-3">신규 앱 런칭</h3>
+                  <h3 className="text-[24px] font-semibold text-white mb-3">합리적인 유지보수</h3>
                   <p className="text-[15px] text-white/50 leading-relaxed break-keep">
-                    기존 사업을 확장하기 위해<br/>새로운 앱/웹 서비스가 필요한 기업
+                    값비싼 월 관리비 대신<br/>MOU 특별가로 부담 없이 시작
                   </p>
                 </div>
 
                 <ul className="space-y-3.5 flex flex-col justify-center">
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">반응형 웹 기반 모바일 웹앱(PWA) 런칭</span>
+                    <span className="leading-relaxed break-keep">제작비 50% 파격 할인 혜택 (199만원)</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">B2B 가맹점 및 프랜차이즈 관리 시스템</span>
+                    <span className="leading-relaxed break-keep">월 유지보수비 단 5만원으로 서버/도메인 지원</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">커뮤니티 기반 버티컬 커머스 런칭</span>
+                    <span className="leading-relaxed break-keep">빠르고 정확한 텍스트/이미지 수정 처리</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">기존 레거시(구형) 웹사이트의 플랫폼 고도화</span>
+                    <span className="leading-relaxed break-keep">트래픽 급증에도 다운되지 않는 안정적인 서버</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">예약 & 스케줄링 기반 서비스 플랫폼</span>
+                    <span className="leading-relaxed break-keep">정기적인 보안 업데이트 및 백업 제공</span>
                   </li>
                 </ul>
               </div>
@@ -668,23 +668,23 @@ function Portfolio() {
   const portfolios = [
     {
       id: 1,
-      type: "O2O 매칭 앱",
-      title: "S사 맞춤형 B2B 견적 매칭 플랫폼",
-      tags: ["#실시간매칭", "#1:1채팅", "#결제시스템"],
+      type: "개원가 프리미엄 홈페이지",
+      title: "S재활의학과 맞춤형 웹사이트",
+      tags: ["#SEO최적화", "#특화클리닉", "#예약연동"],
       image: "/assets/images/portfolio_matching_app_1787205038370.png"
     },
     {
       id: 2,
-      type: "SaaS 웹 대시보드",
-      title: "F사 가맹점 통합 관리 시스템",
-      tags: ["#데이터시각화", "#회원통계", "#실시간리포트"],
+      type: "예약 및 환자 관리",
+      title: "D의원 환자 예약 관리 대시보드",
+      tags: ["#예약현황", "#환자통계", "#실시간리포트"],
       image: "/assets/images/portfolio_dashboard_1787205051396.png"
     },
     {
       id: 3,
-      type: "이커머스 & 예약 서비스",
-      title: "M사 위치기반 맞춤형 뷰티 예약",
-      tags: ["#위치기반(GPS)", "#스케줄링", "#리뷰시스템"],
+      type: "이벤트 랜딩 페이지",
+      title: "M클리닉 통증 치료 특화 랜딩",
+      tags: ["#퍼포먼스마케팅", "#전환율최적화", "#빠른제작"],
       image: "/assets/images/portfolio_booking_app_1787205064182.png"
     }
   ];
@@ -782,36 +782,37 @@ function Pricing() {
             className="bg-[#0a0a0a] text-white rounded-[32px] p-10 md:p-12 flex flex-col relative shadow-[0_30px_60px_rgba(0,0,0,0.15)] transform md:-translate-y-4"
           >
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black text-[13px] font-bold px-5 py-2.5 rounded-full tracking-wider shadow-lg">
-              Most Popular
+              MOU 특별 혜택
             </div>
             
-            <h3 className="text-[28px] font-bold mb-4 mt-2">플랫폼 웹/앱(MVP)</h3>
+            <h3 className="text-[28px] font-bold mb-4 mt-2">재활의학과 프리미엄 홈페이지</h3>
             <p className="text-[16px] text-white/60 mb-8 h-12 break-keep leading-relaxed">
-              자본을 효율적으로 사용하여 맞춤형 플랫폼 및 MVP 제작
+              재활의학과의사회 소속 원장님들만을 위한 파격적인 특별 할인
             </p>
             
-            <div className="mb-10 pb-10 border-b border-white/10">
-              <div className="text-[36px] font-bold tracking-tight">500~1,500<span className="text-[20px] font-medium text-white/60 ml-1">만원</span></div>
+            <div className="mb-10 pb-10 border-b border-white/10 flex flex-col">
+              <span className="line-through text-white/40 text-[18px] mb-1">기존 400만원</span>
+              <div className="text-[36px] font-bold tracking-tight text-[#FF9FFC]">199<span className="text-[20px] font-medium text-white/60 ml-1">만원 (50% 할인)</span></div>
             </div>
             
             <ul className="space-y-4 mb-12 flex-1">
               <li className="flex items-start text-[15px] font-semibold text-white">
-                <span className="mr-3 text-[12px] mt-[4px]">⚡</span> 5주 완성형
+                <span className="mr-3 text-[12px] mt-[4px]">⚡</span> 월 관리비 단 5만원 (유지보수비 파격할인)
               </li>
               <li className="flex items-start text-[15px] text-white/70">
-                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 100% 맞춤형 하이엔드 UI/UX
+                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 100% 원장님 맞춤형 하이엔드 UI/UX
               </li>
               <li className="flex items-start text-[15px] text-white/70">
-                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> Ai연결을 통한 사용자 서비스 제공
+                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 네이버/구글 SEO 및 AEO 기본 최적화
               </li>
               <li className="flex items-start text-[15px] text-white/70">
-                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 복수사용자와 관리자 기능을 갖춘 운영 플랫폼
+                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 스마트한 원장님 전용 관리자 페이지
               </li>
               <li className="flex items-start text-[15px] text-white/70">
-                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 반응형 웹 기반 모바일 웹앱(PWA)
+                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 병원 예약 시스템 및 카카오톡 연동
               </li>
               <li className="flex items-start text-[15px] text-white/70">
-                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 투자유치 및 국책과제 MVP 제작
+                <span className="mr-3 text-white/30 text-[10px] mt-[6px]">●</span> 서버 및 도메인 1년 무상 지원
               </li>
             </ul>
             
@@ -819,7 +820,7 @@ function Pricing() {
               onClick={() => navigate('/estimate')}
               className="w-full py-4 rounded-full bg-white text-black font-bold text-[16px] transition-transform duration-200 active:scale-95 hover:bg-gray-100"
             >
-              무료 컨설팅 신청하기
+              MOU 혜택 신청하기
             </button>
           </motion.div>
 
@@ -831,24 +832,24 @@ function Pricing() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="bg-[#f8f8f8] border border-black/5 rounded-[32px] p-10 md:p-12 flex flex-col hover:bg-white transition-colors duration-500 shadow-[0_15px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] mt-8 md:mt-0"
           >
-            <h3 className="text-[28px] font-bold mb-4 mt-2 text-black">자사 홈페이지 제작</h3>
+            <h3 className="text-[28px] font-bold mb-4 mt-2 text-black">특화 이벤트 랜딩페이지</h3>
             <p className="text-[16px] text-[#666] mb-8 h-12 break-keep leading-relaxed">
-              스타트업 소개용 하이엔드 웹사이트.<br/>신규 앱 런칭 전 안내 웹사이트.
+              개원 이벤트나 특정 통증 클리닉을<br/>집중 홍보하기 위한 단일 페이지 제작
             </p>
             
-            <div className="mb-10 pb-10 border-b border-black/10">
-              <div className="text-[36px] font-bold text-black tracking-tight">100<span className="text-[20px] font-medium text-[#666] ml-1">만원부터</span></div>
+            <div className="mb-10 pb-10 border-b border-black/10 flex flex-col justify-end h-full">
+              <div className="text-[36px] font-bold text-black tracking-tight mt-auto">100<span className="text-[20px] font-medium text-[#666] ml-1">만원부터</span></div>
             </div>
             
             <ul className="space-y-4 mb-12 flex-1">
               <li className="flex items-start text-[15px] text-[#555]">
-                <span className="mr-3 text-black/20 text-[10px] mt-[6px]">●</span> 완벽한 반응형 웹
+                <span className="mr-3 text-black/20 text-[10px] mt-[6px]">●</span> 모바일 중심 반응형 단일 웹
               </li>
               <li className="flex items-start text-[15px] text-[#555]">
-                <span className="mr-3 text-black/20 text-[10px] mt-[6px]">●</span> 하이엔드 애니메이션
+                <span className="mr-3 text-black/20 text-[10px] mt-[6px]">●</span> 퍼포먼스 마케팅에 특화된 구조
               </li>
               <li className="flex items-start text-[15px] text-[#555]">
-                <span className="mr-3 text-black/20 text-[10px] mt-[6px]">●</span> 3~4주 소요
+                <span className="mr-3 text-black/20 text-[10px] mt-[6px]">●</span> 빠른 이벤트 집행을 위한 단기 소요
               </li>
             </ul>
             
@@ -856,7 +857,7 @@ function Pricing() {
               onClick={() => navigate('/estimate')}
               className="w-full py-4 rounded-full bg-transparent border-2 border-black text-black font-bold text-[16px] transition-transform duration-200 active:scale-95 hover:bg-black hover:text-white"
             >
-              문의하기
+              상담 문의하기
             </button>
           </motion.div>
 

@@ -155,7 +155,7 @@ export default function Estimate() {
             myProjects.push({
               id: Date.now(),
               date: new Date().toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' }),
-              title: '프로젝트 문의',
+              title: 'MOU 혜택 신청',
               status: '접수 대기', // 접수 대기, 검토 중, 미팅 예정 등
               platformType: formData.platformType || '미지정',
               description: formData.description
@@ -217,10 +217,10 @@ export default function Estimate() {
           className="text-center mb-16"
         >
           <h1 className="text-[32px] md:text-[42px] font-bold text-black tracking-tight mb-4">
-            어떤 프로젝트를<br className="md:hidden" /> 준비 중이신가요?
+            재활의학과의사회<br className="md:hidden" /> 특별 MOU 혜택 신청
           </h1>
           <p className="text-[16px] text-gray-500">
-            생각하고 계신 아이디어를 편하게 알려주세요.<br className="md:hidden" /> Platform Maker가 현실로 만들어 드립니다.
+            원장님의 병원에 꼭 맞는 맞춤형 홈페이지를<br className="md:hidden" /> 파격적인 혜택으로 구축해 드립니다.
           </p>
         </motion.div>
 
@@ -255,8 +255,8 @@ export default function Estimate() {
                 <input type="text" name="title" value={formData.title} onChange={handleInputChange} className="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:border-black focus:ring-1 focus:ring-black outline-none transition-all text-[15px]" placeholder="대표, 이사, 팀장 등" />
               </div>
               <div className="relative">
-                <label className="block text-[13px] font-semibold text-gray-700 mb-2">회사명 또는 팀명 *</label>
-                <input ref={companyRef} type="text" name="company" value={formData.company} onChange={handleInputChange} className={`w-full px-4 py-3.5 bg-gray-50 border ${errors.company ? 'border-red-500 bg-red-50' : 'border-gray-200'} rounded-xl focus:bg-white focus:border-black focus:ring-1 focus:ring-black outline-none transition-all text-[15px]`} placeholder="회사명 입력" />
+                <label className="block text-[13px] font-semibold text-gray-700 mb-2">병원명 (의원명) *</label>
+                <input ref={companyRef} type="text" name="company" value={formData.company} onChange={handleInputChange} className={`w-full px-4 py-3.5 bg-gray-50 border ${errors.company ? 'border-red-500 bg-red-50' : 'border-gray-200'} rounded-xl focus:bg-white focus:border-black focus:ring-1 focus:ring-black outline-none transition-all text-[15px]`} placeholder="병원명 입력" />
                 <AnimatePresence>
                   {errors.company && (
                     <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }} className="absolute -top-10 left-0 bg-red-500 text-white text-[12px] font-bold px-3 py-1.5 rounded-lg shadow-lg pointer-events-none z-10 whitespace-nowrap">
@@ -267,11 +267,11 @@ export default function Estimate() {
                 </AnimatePresence>
               </div>
               <div>
-                <label className="block text-[13px] font-semibold text-gray-700 mb-2">회사 지역 (선택)</label>
+                <label className="block text-[13px] font-semibold text-gray-700 mb-2">병원 지역 (선택)</label>
                 <input type="text" name="region" value={formData.region} onChange={handleInputChange} className="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:border-black focus:ring-1 focus:ring-black outline-none transition-all text-[15px]" placeholder="예: 서울 강남구" />
               </div>
               <div className="md:col-span-2">
-                <label className="block text-[13px] font-semibold text-gray-700 mb-2">회사 홈페이지 (선택)</label>
+                <label className="block text-[13px] font-semibold text-gray-700 mb-2">기존 병원 홈페이지 (선택)</label>
                 <input type="url" name="website" value={formData.website} onChange={handleInputChange} className="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:border-black focus:ring-1 focus:ring-black outline-none transition-all text-[15px]" placeholder="https://..." />
               </div>
               <div className="relative">
@@ -417,7 +417,7 @@ export default function Estimate() {
           >
             <h2 className="text-[20px] font-bold mb-6 flex items-center">
               <span className="bg-black text-white w-6 h-6 rounded-full flex items-center justify-center text-[12px] mr-3">4</span>
-              준비 중이신 비즈니스에 대해 자세히 들려주세요
+              원장님의 병원에 대해 자세히 들려주세요
             </h2>
             <textarea 
               name="description"
@@ -425,7 +425,7 @@ export default function Estimate() {
               onChange={handleInputChange}
               rows="6"
               className="w-full p-5 bg-gray-50 border border-gray-200 rounded-2xl focus:bg-white focus:border-black focus:ring-1 focus:ring-black outline-none transition-all text-[15px] resize-none leading-relaxed"
-              placeholder="어떤 타겟층을 위한 서비스인가요? 경쟁사와 다른 우리만의 차별점은 무엇인가요? 막막하시다면 생각나는 대로 편하게 적어주셔도 좋습니다. 상담을 통해 저희가 확실하게 구체화해 드리겠습니다."
+              placeholder="주요 진료 과목이나 특화 클리닉이 있다면 알려주세요. 원장님만의 진료 철학이나 경쟁 병원과 다른 차별점 등 생각나는 대로 편하게 적어주셔도 좋습니다. 상담을 통해 저희가 확실하게 구체화해 드리겠습니다."
             ></textarea>
           </motion.div>
 
@@ -483,7 +483,7 @@ export default function Estimate() {
               disabled={isLoading}
               className="bg-black text-white font-bold text-[18px] px-12 py-5 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.15)] hover:bg-gray-800 hover:shadow-[0_15px_40px_rgba(0,0,0,0.2)] transition-all duration-300 transform active:scale-95 disabled:opacity-50 disabled:active:scale-100"
             >
-              {isLoading ? '접수 처리 중...' : '견적 상담 신청하기'}
+              {isLoading ? '접수 처리 중...' : 'MOU 특별 혜택 신청하기'}
             </button>
           </motion.div>
 
