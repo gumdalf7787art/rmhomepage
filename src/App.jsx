@@ -684,6 +684,7 @@ function Portfolio() {
       title: "프리미엄 재활의학과",
       tags: ["#표준형", "#정보전달최적화", "#신뢰감"],
       url: "https://naumclinic.pages.dev/",
+      image: "/assets/images/portfolio_matching_app_1787205038370.png",
       desc: "다양한 진료 과목과 병원 안내를 체계적으로 보여주는 가장 표준적이고 안정적인 레이아웃입니다."
     },
     {
@@ -692,6 +693,7 @@ function Portfolio() {
       title: "브랜딩 특화 홈페이지",
       tags: ["#시각적임팩트", "#몰입감", "#고급스러움"],
       url: "https://naumclinic.pages.dev/fullpage",
+      image: "/assets/images/portfolio_dashboard_1787205051396.png",
       desc: "한 화면씩 꽉 채워서 넘어가는 방식으로, 병원의 철학과 하이엔드 브랜딩을 강조할 때 강력한 인상을 줍니다."
     },
     {
@@ -700,6 +702,7 @@ function Portfolio() {
       title: "특화 진료 및 이벤트 랜딩",
       tags: ["#심플함", "#빠른정보전달", "#전환율최적화"],
       url: "https://naumclinic.pages.dev/onepage",
+      image: "/assets/images/portfolio_booking_app_1787205064182.png",
       desc: "페이지 이동 없이 스크롤만으로 핵심 정보를 빠르게 전달하며, 특정 진료나 이벤트를 집중 홍보하기에 최적화된 구조입니다."
     }
   ];
@@ -734,13 +737,12 @@ function Portfolio() {
               key={item.id}
               className="group cursor-pointer flex flex-col"
             >
-              {/* Iframe Container */}
-              <div className="w-full aspect-[3/4] md:aspect-[4/5] rounded-[24px] overflow-hidden mb-6 relative border border-black/5 shadow-[0_15px_40px_rgba(0,0,0,0.06)] bg-white">
-                <iframe 
-                  src={item.url} 
-                  title={item.title}
-                  className="w-full h-full object-cover pointer-events-none scale-[0.9] md:scale-[0.8] origin-top"
-                  loading="lazy"
+              {/* Image Container */}
+              <div className="w-full aspect-[4/5] rounded-[24px] overflow-hidden mb-6 relative border border-black/5 shadow-[0_15px_40px_rgba(0,0,0,0.06)] bg-[#f8f8f8]">
+                <img 
+                  src={item.image} 
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/5 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/80 text-white font-bold py-3 px-6 rounded-full text-[14px]">
