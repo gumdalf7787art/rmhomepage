@@ -473,36 +473,36 @@ function Features() {
   const features = [
     {
       id: 1,
-      title: "100% 맞춤형 하이엔드 UI/UX",
-      desc: "공장형 템플릿으로는 브랜드를 각인시킬 수 없습니다. 고객의 시선을 단번에 사로잡고 이탈률을 낮추는 독창적인 인터페이스를 설계합니다.",
+      title: "병원 브랜딩 맞춤 디자인",
+      desc: "공장형 템플릿으로는 브랜드를 각인시킬 수 없습니다. 원장님만의 진료 철학과 병원의 분위기를 온전히 담아내는 독창적인 인터페이스를 설계합니다.",
       visual: "/assets/images/feature_ui_ux_1787196032064.png",
       className: "md:col-span-2 md:row-span-1" // 넓은 가로형 카드
     },
     {
       id: 2,
-      title: "강력한 맞춤형 관리자",
-      desc: "실시간 트래픽, 결제 통계, 회원 관리를 한눈에 제어할 수 있는 맞춤형 백오피스입니다.",
+      title: "병원 맞춤형 원장님 대시보드",
+      desc: "실시간 온라인 예약, 환자 유입 통계, 공지사항을 한눈에 직관적으로 제어할 수 있는 스마트 백오피스를 제공합니다.",
       visual: "/assets/images/feature_admin_dashboard_1787196044390.png",
       className: "md:col-span-1 md:row-span-1"
     },
     {
       id: 3,
-      title: "흔들림 없는 서버 안정성",
-      desc: "초기 MVP부터 대규모 서비스까지 대응 가능한 최신 클라우드 아키텍처로 구축합니다.",
+      title: "보안 및 최상급 서버 안정성",
+      desc: "환자들의 원활한 접속을 위해 트래픽 폭주 시에도 다운되지 않는 빠르고 안정적인 최신 클라우드 서버 환경을 구축합니다.",
       visual: "/assets/images/feature_server_stability_1787196057950.png",
       className: "md:col-span-1 md:row-span-1"
     },
     {
       id: 4,
-      title: "미래 지향적 AI 연동",
-      desc: "챗봇, 자동화 알고리즘 등 최신 AI 기술을 플랫폼에 매끄럽게 녹여냅니다.",
+      title: "강력한 마케팅 & SEO 연동",
+      desc: "환자들이 지역 내 재활의학과 검색 시 효과적으로 노출될 수 있도록 네이버/구글 검색 엔진 최적화(SEO)를 완벽하게 적용합니다.",
       visual: "/assets/images/feature_ai_integration_1787196071031.png",
       className: "md:col-span-1 md:row-span-1"
     },
     {
       id: 5,
-      title: "올케어 유지보수",
-      desc: "제작만 하고 끝내지 않습니다. 24시간 서버 안정화까지 든든한 기술 파트너가 됩니다.",
+      title: "올케어 안심 유지보수",
+      desc: "제작만 하고 끝내지 않습니다. 바쁘신 원장님을 대신해 팝업 등록, 진료 시간 변경, 신규 장비 안내 등 철저한 사후 관리를 책임집니다.",
       visual: "/assets/images/feature_maintenance_care_1787196082088.png",
       className: "md:col-span-1 md:row-span-1"
     }
@@ -523,9 +523,9 @@ function Features() {
           className="text-center mb-16 md:mb-24"
         >
           <h2 className="text-[36px] md:text-[52px] font-bold tracking-tight mb-6 leading-[1.2]">
-            타협 없는 퀄리티,<br />성공을 위한 완벽한 기반
+            최신 기능과 맞춤형 디자인,<br />환자 유입을 위한 완벽한 기반
           </h2>
-          <p className="text-[18px] text-white/50">Platform Maker만의 5가지 차별화 포인트</p>
+          <p className="text-[18px] text-white/50">재활의학과 홈페이지를 위한 5가지 차별화 포인트</p>
         </motion.div>
 
         {/* Bento Box Grid */}
