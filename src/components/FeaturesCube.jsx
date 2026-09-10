@@ -95,14 +95,14 @@ export default function FeaturesCube() {
   };
 
   return (
-    <section className="py-24 px-4 bg-[#F8F9FA] relative overflow-hidden">
+    <section className="py-16 px-4 bg-[#F8F9FA] relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <h2 className="text-[36px] md:text-[48px] font-bold tracking-tight mb-4 text-ink">
             재활의학과에 <span className="text-[#5227FF]">꼭 필요한 12가지</span> 핵심 기능
@@ -117,21 +117,21 @@ export default function FeaturesCube() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4"
         >
           {features.map((feature, index) => (
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="group bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(82,39,255,0.08)] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col items-start"
+              className="group bg-white rounded-2xl p-5 md:p-6 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(82,39,255,0.08)] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col items-start"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#F3EBFF] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-10 h-10 rounded-xl bg-[#F3EBFF] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-[18px] font-bold text-ink mb-3 group-hover:text-[#5227FF] transition-colors duration-300">
+              <h3 className="text-[16px] font-bold text-ink mb-2 group-hover:text-[#5227FF] transition-colors duration-300">
                 {feature.title}
               </h3>
-              <p className="text-[14px] text-ink-muted-80 leading-relaxed">
+              <p className="text-[13px] text-ink-muted-80 leading-relaxed">
                 {feature.desc}
               </p>
             </motion.div>
