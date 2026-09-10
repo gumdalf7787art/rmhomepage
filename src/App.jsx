@@ -599,22 +599,12 @@ function Workflow() {
     },
     {
       week: 4,
-      title: "통합 테스트 및 마케팅 최적화",
-      desc: "환자들이 어떤 환경에서 접속하든 빠르고 원활하게 병원 정보를 얻을 수 있도록 꼼꼼하게 검수합니다.",
+      title: "통합 테스트 및 정식 런칭",
+      desc: "꼼꼼한 검수와 마케팅 세팅 후, 병원의 온라인 간판을 세상에 성공적으로 오픈합니다.",
       tasks: [
-        "기기별(스마트폰, 태블릿 등) 화면 깨짐 및 구동 테스트",
-        "지역 환자 유입을 위한 네이버/구글 검색엔진 최적화(SEO) 세팅",
-        "예약 및 문의 폼 정상 작동 확인"
-      ]
-    },
-    {
-      week: 5,
-      title: "최종 컨펌 및 정식 런칭",
-      desc: "모든 준비를 마치고 병원의 온라인 간판을 세상에 성공적으로 오픈합니다.",
-      tasks: [
-        "최종 도메인 연결 및 보안 인증서(SSL) 적용",
-        "관리자 페이지 사용 방법 안내 및 인수인계",
-        "지속적인 사후 유지보수 안내"
+        "기기별 호환성 테스트 및 검색엔진 최적화(SEO) 적용",
+        "최종 도메인 연결 및 보안 인증서(SSL) 세팅",
+        "관리자 페이지 인수인계 및 사후 유지보수 안내"
       ]
     }
   ];
@@ -633,9 +623,12 @@ function Workflow() {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-center mb-24"
         >
-          <h2 className="text-[36px] md:text-[52px] font-bold tracking-tight mb-6 leading-[1.3]">
-            계약부터 홈페이지 오픈까지 단 5주.<br />성공적인 개원을 위한 체계적인 워크플로우
+          <h2 className="text-[36px] md:text-[52px] font-bold tracking-tight mb-4 leading-[1.3]">
+            계약부터 홈페이지 오픈까지 단 4주.<br />성공적인 개원을 위한 체계적인 워크플로우
           </h2>
+          <p className="text-[16px] md:text-[18px] text-white/50">
+            * 협의에 따라 작업 기간은 유연하게 변경 가능합니다.
+          </p>
         </motion.div>
 
         <div className="relative pl-8 md:pl-0">
