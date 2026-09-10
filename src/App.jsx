@@ -228,7 +228,12 @@ function Hero() {
           transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="mt-[164px] w-full max-w-[1124px] aspect-[16/11.7] bg-white rounded-2xl border border-divider-soft shadow-[0_40px_80px_rgba(0,0,0,0.15)] overflow-hidden flex items-center justify-center relative"
         >
-          <DashboardMockup />
+          <iframe 
+            src="https://naumclinic.pages.dev/" 
+            className="w-full h-full border-none bg-white"
+            title="나음의원 포트폴리오 미리보기"
+            loading="lazy"
+          ></iframe>
         </motion.div>
       </div>
     </section>
