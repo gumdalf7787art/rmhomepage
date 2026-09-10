@@ -13,6 +13,7 @@ import MyPage from './components/MyPage';
 import KakaoCallback from './components/KakaoCallback';
 import NaverCallback from './components/NaverCallback';
 import GoogleCallback from './components/GoogleCallback';
+import FeaturesCube from './components/FeaturesCube';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -1151,6 +1152,7 @@ function App() {
             <Navbar isLoggedIn={isLoggedIn} />
             <main className="w-full">
               <Hero />
+              <FeaturesCube />
               <Pricing />
               <Problem />
               <Features />
