@@ -723,7 +723,7 @@ function Portfolio() {
             Portfolio
           </h2>
           <p className="text-[17px] md:text-[19px] text-[#666] leading-[1.6] max-w-[700px] mx-auto break-keep">
-            고객사의 비즈니스 아이디어 보호를 위해, 본 화면은 전체적인 톤앤매너와 개발 퀄리티를 확인하실 수 있는 <span className="font-semibold text-black">샘플 형태</span>로만 제공되는 점 양해 부탁드립니다.
+            성공적인 개원과 신뢰받는 병원 브랜딩을 완성하는 <span className="font-semibold text-[#5227FF]">재활의학과 맞춤형 홈페이지 레퍼런스</span>를 직접 확인해 보세요.
           </p>
         </motion.div>
 
