@@ -684,7 +684,7 @@ function Portfolio() {
       title: "프리미엄 재활의학과",
       tags: ["#표준형", "#정보전달최적화", "#신뢰감"],
       url: "https://naumclinic.pages.dev/",
-      image: "/assets/images/portfolio_matching_app_1787205038370.png",
+      image: "/assets/images/portfolio_1.gif",
       desc: "다양한 진료 과목과 병원 안내를 체계적으로 보여주는 가장 표준적이고 안정적인 레이아웃입니다."
     },
     {
@@ -693,7 +693,7 @@ function Portfolio() {
       title: "브랜딩 특화 홈페이지",
       tags: ["#시각적임팩트", "#몰입감", "#고급스러움"],
       url: "https://naumclinic.pages.dev/fullpage",
-      image: "/assets/images/portfolio_dashboard_1787205051396.png",
+      image: "/assets/images/portfolio_2.gif",
       desc: "한 화면씩 꽉 채워서 넘어가는 방식으로, 병원의 철학과 하이엔드 브랜딩을 강조할 때 강력한 인상을 줍니다."
     },
     {
@@ -702,7 +702,7 @@ function Portfolio() {
       title: "특화 진료 및 이벤트 랜딩",
       tags: ["#심플함", "#빠른정보전달", "#전환율최적화"],
       url: "https://naumclinic.pages.dev/onepage",
-      image: "/assets/images/portfolio_booking_app_1787205064182.png",
+      image: "/assets/images/portfolio_3.gif",
       desc: "페이지 이동 없이 스크롤만으로 핵심 정보를 빠르게 전달하며, 특정 진료나 이벤트를 집중 홍보하기에 최적화된 구조입니다."
     }
   ];
