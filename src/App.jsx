@@ -727,18 +727,48 @@ function Portfolio() {
           </p>
         </motion.div>
 
-        {/* 3 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+        {/* Horizontal Stack */}
+        <div className="flex flex-col gap-20 md:gap-32">
           {portfolios.map((item, index) => (
-            <a
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
+            <motion.div
               key={item.id}
-              className="group cursor-pointer flex flex-col"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className={`flex flex-col md:flex-row items-center gap-10 md:gap-16 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
             >
+              {/* Text Info */}
+              <div className="flex-1 w-full text-left">
+                <div className="text-[14px] md:text-[16px] font-bold text-[#5227FF] mb-4 tracking-wider">0{index + 1} / {item.type}</div>
+                <h3 className="text-[32px] md:text-[40px] font-bold text-black mb-6 leading-tight break-keep">{item.title}</h3>
+                <p className="text-[16px] md:text-[18px] text-[#666] mb-8 leading-relaxed break-keep">
+                  {item.desc}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {item.tags.map((tag, i) => (
+                    <span key={i} className="px-4 py-2 bg-[#f5f5f7] text-[#555] text-[14px] rounded-full font-medium tracking-tight">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <a 
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-black text-white px-6 py-4 rounded-full font-semibold text-[15px] hover:bg-[#333] transition-colors"
+                >
+                  새 창에서 사이트 보기 ↗
+                </a>
+              </div>
+
               {/* Image Container */}
-              <div className="w-full aspect-[4/5] rounded-[24px] overflow-hidden mb-6 relative border border-black/5 shadow-[0_15px_40px_rgba(0,0,0,0.06)] bg-[#f8f8f8]">
+              <a 
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 w-full group relative aspect-[4/5] rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-black/5 block"
+              >
                 <img 
                   src={item.image} 
                   alt={item.title}
@@ -749,24 +779,8 @@ function Portfolio() {
                     새 창에서 열기 ↗
                   </div>
                 </div>
-              </div>
-
-              {/* Text Info */}
-              <div className="px-1 flex-1 flex flex-col">
-                <div className="text-[13px] font-semibold text-[#5227FF] mb-3 tracking-wide">{item.type}</div>
-                <h3 className="text-[22px] font-bold text-black mb-3 leading-tight">{item.title}</h3>
-                <p className="text-[14px] text-[#666] mb-5 leading-relaxed break-keep flex-1">
-                  {item.desc}
-                </p>
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  {item.tags.map((tag, i) => (
-                    <span key={i} className="px-3 py-1.5 bg-[#f5f5f7] text-[#555] text-[12px] md:text-[13px] rounded-full font-medium tracking-tight">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </a>
+              </a>
+            </motion.div>
           ))}
         </div>
       </div>
