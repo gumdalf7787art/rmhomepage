@@ -226,7 +226,7 @@ function Hero() {
           initial={{ opacity: 0, scale: 0.95, y: 40 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-[164px] w-full max-w-[1124px] aspect-[16/11.7] bg-white rounded-2xl border border-divider-soft shadow-[0_40px_80px_rgba(0,0,0,0.15)] overflow-hidden flex items-center justify-center relative"
+          className="mt-[164px] w-full max-w-[1440px] aspect-[16/9] bg-white rounded-2xl border border-divider-soft shadow-[0_40px_80px_rgba(0,0,0,0.15)] overflow-hidden flex items-center justify-center relative"
         >
           <iframe 
             src="https://naumclinic.pages.dev/" 
