@@ -147,6 +147,16 @@ function Hero() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const handleMessage = (event) => {
+      if (event.data && event.data.type === 'scrollParent') {
+        window.scrollBy({ top: event.data.deltaY, behavior: 'auto' });
+      }
+    };
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, []);
+
   return (
     <section className="tile-light relative pt-[140px] pb-section flex flex-col items-center text-center overflow-hidden min-h-[90vh]">
       <div className="absolute inset-0 z-0 opacity-100">
