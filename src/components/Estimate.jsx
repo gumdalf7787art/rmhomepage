@@ -26,7 +26,7 @@ export default function Estimate() {
     website: '',
     userType: '',
     platformType: '',
-    features: [],
+    features: '',
     description: '',
     files: []
   });
@@ -57,16 +57,6 @@ export default function Estimate() {
     }
   };
 
-  const handleFeatureToggle = (featureId) => {
-    setFormData(prev => {
-      const isSelected = prev.features.includes(featureId);
-      if (isSelected) {
-        return { ...prev, features: prev.features.filter(id => id !== featureId) };
-      } else {
-        return { ...prev, features: [...prev.features, featureId] };
-      }
-    });
-  };
 
   const handleFileChange = (e) => {
     if (e.target.files && e.target.files.length > 0) {
@@ -127,8 +117,6 @@ export default function Estimate() {
           formData.files.forEach(file => {
             data.append('files', file);
           });
-        } else if (key === 'features') {
-          data.append(key, JSON.stringify(formData.features));
         } else {
           data.append(key, formData[key]);
         }
@@ -176,16 +164,6 @@ export default function Estimate() {
     }
   };
 
-  const featureOptions = [
-    { id: 'chat', label: '1:1 실시간 채팅', icon: <MessageSquare size={16} /> },
-    { id: 'pg', label: '결제/PG사 연동', icon: <CreditCard size={16} /> },
-    { id: 'gps', label: '위치기반(GPS)', icon: <MapPin size={16} /> },
-    { id: 'push', label: '푸시 알림', icon: <Bell size={16} /> },
-    { id: 'sms', label: '문자 발송 기능', icon: <Smartphone size={16} /> },
-    { id: 'ai', label: 'Ai Api 연결', icon: <Cpu size={16} /> },
-    { id: 'dashboard', label: '관리자 대시보드', icon: <BarChart3 size={16} /> },
-    { id: 'ecommerce', label: '이커머스/장바구니', icon: <ShoppingBag size={16} /> },
-  ];
 
   return (
     <div className="min-h-screen bg-[#fafafc] relative overflow-hidden">
@@ -334,9 +312,9 @@ export default function Estimate() {
             </div>
 
             <div>
-              <p className="text-[14px] text-gray-500 mb-4 font-medium">플랫폼 형태</p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                {['반응형 웹', '모바일 앱 (출시)', '둘 다 필요함'].map(type => (
+              <p className="text-[14px] text-gray-500 mb-4 font-medium">어떤 형태 개발을 원하시나요?</p>
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+                {['표준 홈페이지', '풀페이지 홈페이지', '원페이지 홈페이지', '상담후 결정'].map(type => (
                   <button
                     key={type}
                     type="button"
@@ -361,51 +339,18 @@ export default function Estimate() {
             viewport={{ once: true }}
             className="bg-white p-8 md:p-10 rounded-[32px] shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-100"
           >
-            <h2 className="text-[20px] font-bold mb-2 flex items-center">
+            <h2 className="text-[20px] font-bold mb-6 flex items-center">
               <span className="bg-black text-white w-6 h-6 rounded-full flex items-center justify-center text-[12px] mr-3">3</span>
-              필요한 핵심 기능들을 모두 선택해 주세요
+              원하시는 홈페이지 기능이나 벤치마킹 홈페이지를 알려주세요.
             </h2>
-            <p className="text-[13px] text-gray-500 mb-6 pl-9">생각나는 대로 편하게 선택해 주시면 상담 시 구체화해 드립니다.</p>
-            
-            <div className="flex flex-wrap gap-3 pl-0 md:pl-9">
-              {featureOptions.map(feature => {
-                const isSelected = formData.features.includes(feature.id);
-                return (
-                  <button
-                    key={feature.id}
-                    type="button"
-                    onClick={() => handleFeatureToggle(feature.id)}
-                    className={`flex items-center px-5 py-3 rounded-full text-[14px] font-medium border transition-all duration-300 ${
-                      isSelected
-                        ? 'border-black bg-black text-white shadow-md transform scale-[1.02]'
-                        : 'border-gray-200 bg-white text-gray-600 hover:border-gray-300 hover:bg-gray-50'
-                    }`}
-                  >
-                    <span className={`mr-2 ${isSelected ? 'text-[#FF9FFC]' : 'text-gray-400'}`}>
-                      {feature.icon}
-                    </span>
-                    {feature.label}
-                  </button>
-                );
-              })}
-            </div>
-            
-            {/* Dynamic Feedback based on AI selection */}
-            <AnimatePresence>
-              {formData.features.includes('ai') && (
-                <motion.div 
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  className="pl-0 md:pl-9 mt-6"
-                >
-                  <div className="bg-[#F3EBFF] text-[#5227FF] px-4 py-3 rounded-xl text-[13px] font-medium flex items-start">
-                    <span className="mr-2">✨</span>
-                    최신 Ai Api 연결을 선택하셨군요! 비즈니스 로직에 맞춘 최적의 프롬프트 엔지니어링까지 함께 제안해 드립니다.
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            <textarea 
+              name="features"
+              value={formData.features}
+              onChange={handleInputChange}
+              rows="4"
+              className="w-full p-5 bg-gray-50 border border-gray-200 rounded-2xl focus:bg-white focus:border-black focus:ring-1 focus:ring-black outline-none transition-all text-[15px] resize-none leading-relaxed"
+              placeholder="예시: 로그인/회원가입 기능, 예약 시스템 기능, 또는 참고하고 싶은 사이트(예: example.com) 등을 편하게 적어주세요."
+            ></textarea>
           </motion.div>
 
           {/* Step 4: Details */}
