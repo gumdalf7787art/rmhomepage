@@ -128,7 +128,7 @@ const HERO_COPY = [
   },
   {
     main: (
-      <>어떠한 환경과 페이지도<br/>동일가격 199만원 제작</>
+      <>어떠한 환경과 페이지도<br/>동일가격 250만원 제작</>
     ),
     sub: (
       <>반응형 웹, 모바일 최적화, 네이버/구글 검색 노출(SEO)까지.<br/>복잡한 추가 비용 없이 50% 할인된 특별한 가격으로 제공합니다.</>
@@ -424,7 +424,7 @@ function Problem() {
                 <ul className="space-y-3.5 flex flex-col justify-center">
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
-                    <span className="leading-relaxed break-keep">제작비 50% 파격 할인 혜택 (199만원)</span>
+                    <span className="leading-relaxed break-keep">제작비 50% 파격 할인 혜택 (250만원)</span>
                   </li>
                   <li className="flex items-start text-white/70 text-[14px]">
                     <span className="mr-3 text-white/30 text-[10px] mt-[5px]">●</span>
@@ -828,9 +828,9 @@ function Pricing() {
             </p>
             
             <div className="mb-12 pb-12 border-b border-white/10 flex flex-col items-center w-full">
-              <span className="line-through text-white/40 text-[20px] mb-3">기존 400만원</span>
+              <span className="line-through text-white/40 text-[20px] mb-3">기존 500만원</span>
               <div className="text-[64px] md:text-[84px] font-extrabold tracking-tight text-[#FF9FFC] leading-none flex items-baseline">
-                199
+                250
                 <span className="text-[26px] md:text-[36px] font-bold text-white/80 ml-2">만원</span>
                 <span className="text-[16px] md:text-[20px] font-medium text-white/50 ml-3">(50% 할인)</span>
               </div>
@@ -964,8 +964,8 @@ function FAQ() {
       a: "네, 물론입니다. 수많은 병원 홈페이지 제작 노하우를 바탕으로, 원장님의 진료 철학과 주력 클리닉만 간단히 말씀해 주시면 환자 유입에 최적화된 맞춤형 기획과 메뉴 구조를 저희가 직접 설계해 드립니다."
     },
     {
-      q: "재활의학과의사회 MOU 특별 제안가 199만원 외에 추가 비용이 발생하나요?",
-      a: "기본적인 추가 개발 비용은 전혀 없습니다. 199만원(50% 할인, VAT 별도) 정액제 안에 반응형 하이엔드 홈페이지, 온라인 예약 연동, 검색엔진 최적화(SEO) 등 필수 기능이 모두 포함되어 있습니다. 단, 이 제안가는 일반적인 의원급 홈페이지 규모 제작에 한하며, 규모가 훨씬 큰 대형 프로젝트는 별도 협의를 통해 진행됩니다. (물론 이 또한 재활의학과의사회 특별 할인가로 진행해 드립니다.) 런칭 후 서버 호스팅 및 관리를 위한 월 유지보수 비용(5만원, VAT 별도)만 별도로 발생합니다."
+      q: "재활의학과의사회 MOU 특별 제안가 250만원 외에 추가 비용이 발생하나요?",
+      a: "기본적인 추가 개발 비용은 전혀 없습니다. 250만원(50% 할인, VAT 별도) 정액제 안에 반응형 하이엔드 홈페이지, 온라인 예약 연동, 검색엔진 최적화(SEO) 등 필수 기능이 모두 포함되어 있습니다. 단, 이 제안가는 일반적인 의원급 홈페이지 규모 제작에 한하며, 규모가 훨씬 큰 대형 프로젝트는 별도 협의를 통해 진행됩니다. (물론 이 또한 재활의학과의사회 특별 할인가로 진행해 드립니다.) 런칭 후 서버 호스팅 및 관리를 위한 월 유지보수 비용(5만원, VAT 별도)만 별도로 발생합니다."
     },
     {
       q: "약속된 '단 4주 완성' 기간은 어떻게 보장되나요?",
