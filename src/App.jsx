@@ -832,7 +832,7 @@ function Pricing() {
               <div className="text-[64px] md:text-[84px] font-extrabold tracking-tight text-[#FF9FFC] leading-none flex items-baseline">
                 250
                 <span className="text-[26px] md:text-[36px] font-bold text-white/80 ml-2">만원</span>
-                <span className="text-[16px] md:text-[20px] font-medium text-white/50 ml-3">(50% 할인)</span>
+                <span className="text-[16px] md:text-[20px] font-medium text-white/50 ml-3">(50% 할인, 부가세 별도)</span>
               </div>
             </div>
             
